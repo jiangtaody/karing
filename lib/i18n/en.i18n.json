@@ -389,6 +389,7 @@
         "account": "Account",
         "password": "Password",
         "decryptPassword": "Decrypt Password",
+        "overwriteOutboundDns": "DNS: Override [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Required",
         "type": "Type",
         "path": "Path",

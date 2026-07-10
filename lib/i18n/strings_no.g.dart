@@ -670,6 +670,7 @@ class _Translations$meta$no implements Translations$meta$en {
 	@override String get account => 'Konto';
 	@override String get password => 'Passord';
 	@override String get decryptPassword => 'Dekryptering passord';
+	@override String get overwriteOutboundDns => 'DNS: Overstyr [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Påkrevd';
 	@override String get type => 'Type';
 	@override String get path => 'Bane';
@@ -1299,6 +1300,7 @@ extension on TranslationsNo {
 			'meta.account' => 'Konto',
 			'meta.password' => 'Passord',
 			'meta.decryptPassword' => 'Dekryptering passord',
+			'meta.overwriteOutboundDns' => 'DNS: Overstyr [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Påkrevd',
 			'meta.type' => 'Type',
 			'meta.path' => 'Bane',
@@ -1465,9 +1467,9 @@ extension on TranslationsNo {
 			'isp.bind' => 'Bind til [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Fjern binding[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'Følg[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Ugyldig eller utløpt',
 			'permission.camera' => 'Kamera',

@@ -670,6 +670,7 @@ class _Translations$meta$sv implements Translations$meta$en {
 	@override String get account => 'Konto';
 	@override String get password => 'Lösenord';
 	@override String get decryptPassword => 'Dekrypterringslösenord';
+	@override String get overwriteOutboundDns => 'DNS: Åsidosätt [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Krävs';
 	@override String get type => 'Typ';
 	@override String get path => 'Sökväg';
@@ -1299,6 +1300,7 @@ extension on TranslationsSv {
 			'meta.account' => 'Konto',
 			'meta.password' => 'Lösenord',
 			'meta.decryptPassword' => 'Dekrypterringslösenord',
+			'meta.overwriteOutboundDns' => 'DNS: Åsidosätt [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Krävs',
 			'meta.type' => 'Typ',
 			'meta.path' => 'Sökväg',
@@ -1465,9 +1467,9 @@ extension on TranslationsSv {
 			'isp.bind' => 'Bind till [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Ta bort bindning[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'Följ[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Ogiltig eller utgången',
 			'permission.camera' => 'Kamera',

@@ -276,7 +276,17 @@ class GroupHelper {
       BuildContext context,
       SetStateCallback? setstate,
     ) async {
-      GroupItem options = GroupItem(options: [
+      GroupItem options = GroupItem(
+        options: [
+          GroupItemOptions(
+            switchOptions: GroupItemSwitchOptions(
+              name: HttpUtils.getUserAgentAppend(),
+              switchValue: append,
+              onSwitch: (bool value) async {
+                append = value;
+              },
+            ),
+          ),
         ],
       );
       for (var ua in userAgents) {
@@ -298,17 +308,6 @@ class GroupHelper {
           ),
         );
       }
-      options.options.add(
-        GroupItemOptions(
-          switchOptions: GroupItemSwitchOptions(
-            name: HttpUtils.getUserAgentAppend(),
-            switchValue: append,
-            onSwitch: (bool value) async {
-              append = value;
-            },
-          ),
-        ),
-      );
 
       return [options];
     }

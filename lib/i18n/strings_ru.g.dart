@@ -670,6 +670,7 @@ class _Translations$meta$ru implements Translations$meta$en {
 	@override String get account => 'Аккаунт';
 	@override String get password => 'Пароль';
 	@override String get decryptPassword => 'Пароль расшифровки';
+	@override String get overwriteOutboundDns => 'DNS: Переопределить [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Необходимо';
 	@override String get type => 'тип';
 	@override String get path => 'путь';
@@ -1299,6 +1300,7 @@ extension on TranslationsRu {
 			'meta.account' => 'Аккаунт',
 			'meta.password' => 'Пароль',
 			'meta.decryptPassword' => 'Пароль расшифровки',
+			'meta.overwriteOutboundDns' => 'DNS: Переопределить [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Необходимо',
 			'meta.type' => 'тип',
 			'meta.path' => 'путь',
@@ -1465,9 +1467,9 @@ extension on TranslationsRu {
 			'isp.bind' => 'Привязать к [${_root.meta.isp}]',
 			'isp.unbind' => ({required Object p}) => 'Отвязать[${p}]',
 			'isp.faq' => ({required Object p}) => 'Часто задаваемые вопросы[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Служба поддержки клиентов[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Служба поддержки клиентов[${p}]',
 			'isp.follow' => ({required Object p}) => 'Следуйте[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}]Недействительно, или срок действия истек',
 			'permission.camera' => 'Камера',

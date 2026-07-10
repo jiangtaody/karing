@@ -389,6 +389,7 @@
         "account": "Akun",
         "password": "Kata sandi",
         "decryptPassword": "Kata sandi dekripsi",
+        "overwriteOutboundDns": "DNS: Timpa [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Wajib",
         "type": "Tipe",
         "path": "Jalur",

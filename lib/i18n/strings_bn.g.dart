@@ -670,6 +670,7 @@ class _Translations$meta$bn implements Translations$meta$en {
 	@override String get account => 'অ্যাকাউন্ট';
 	@override String get password => 'পাসওয়ার্ড';
 	@override String get decryptPassword => 'ডিক্রিপ্ট পাসওয়ার্ড';
+	@override String get overwriteOutboundDns => 'DNS: ওভাররাইড [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'প্রয়োজন';
 	@override String get type => 'ধরন';
 	@override String get path => 'পাথ';
@@ -1299,6 +1300,7 @@ extension on TranslationsBn {
 			'meta.account' => 'অ্যাকাউন্ট',
 			'meta.password' => 'পাসওয়ার্ড',
 			'meta.decryptPassword' => 'ডিক্রিপ্ট পাসওয়ার্ড',
+			'meta.overwriteOutboundDns' => 'DNS: ওভাররাইড [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'প্রয়োজন',
 			'meta.type' => 'ধরন',
 			'meta.path' => 'পাথ',
@@ -1465,9 +1467,9 @@ extension on TranslationsBn {
 			'isp.bind' => '[${_root.meta.isp}] এর সাথে লিঙ্ক করুন ',
 			'isp.unbind' => ({required Object p}) => 'আনলিঙ্ক করুন[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'অনুসরণ করুন[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] অকার্যকর বা মেয়াদ শেষ',
 			'permission.camera' => 'ক্যামেরা',

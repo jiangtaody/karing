@@ -670,6 +670,7 @@ class _Translations$meta$tr implements Translations$meta$en {
 	@override String get account => 'Hesap';
 	@override String get password => 'Şifre';
 	@override String get decryptPassword => 'Şifre Çözme Şifresi';
+	@override String get overwriteOutboundDns => 'DNS: Geçersiz kıl [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Gerekli';
 	@override String get type => 'Tür';
 	@override String get path => 'Yol';
@@ -1299,6 +1300,7 @@ extension on TranslationsTr {
 			'meta.account' => 'Hesap',
 			'meta.password' => 'Şifre',
 			'meta.decryptPassword' => 'Şifre Çözme Şifresi',
+			'meta.overwriteOutboundDns' => 'DNS: Geçersiz kıl [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Gerekli',
 			'meta.type' => 'Tür',
 			'meta.path' => 'Yol',
@@ -1465,9 +1467,9 @@ extension on TranslationsTr {
 			'isp.bind' => '[${_root.meta.isp}]\'e Bağla',
 			'isp.unbind' => ({required Object p}) => 'Bağlantıyı Kes [${p}]',
 			'isp.faq' => ({required Object p}) => 'SSS [${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			'isp.follow' => ({required Object p}) => 'Takip Et [${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Geçersiz veya süresi dolmuş',
 			'permission.camera' => 'Kamera',

@@ -389,6 +389,7 @@
         "account": "帳號",
         "password": "密碼",
         "decryptPassword": "解密密碼",
+        "overwriteOutboundDns": "DNS:覆蓋[@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "必填",
         "type": "類型",
         "path": "路徑",

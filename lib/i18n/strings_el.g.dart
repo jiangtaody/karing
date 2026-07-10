@@ -670,6 +670,7 @@ class _Translations$meta$el implements Translations$meta$en {
 	@override String get account => 'Λογαριασμός';
 	@override String get password => 'Κωδικός πρόσβασης';
 	@override String get decryptPassword => 'Κωδικός Αποκρυπτογράφησης';
+	@override String get overwriteOutboundDns => 'DNS: Επικάλυψη [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Απαιτείται';
 	@override String get type => 'Τύπος';
 	@override String get path => 'Διαδρομή';
@@ -1299,6 +1300,7 @@ extension on TranslationsEl {
 			'meta.account' => 'Λογαριασμός',
 			'meta.password' => 'Κωδικός πρόσβασης',
 			'meta.decryptPassword' => 'Κωδικός Αποκρυπτογράφησης',
+			'meta.overwriteOutboundDns' => 'DNS: Επικάλυψη [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Απαιτείται',
 			'meta.type' => 'Τύπος',
 			'meta.path' => 'Διαδρομή',
@@ -1465,9 +1467,9 @@ extension on TranslationsEl {
 			'isp.bind' => 'Σύνδεση με [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Αποσύνδεση[${p}]',
 			'isp.faq' => ({required Object p}) => 'Συχνές ερωτήσεις[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'Ακολουθήστε[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Μη έγκυρο ή ληγμένο',
 			'permission.camera' => 'Κάμερα',

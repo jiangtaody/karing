@@ -670,6 +670,7 @@ class _Translations$meta$ko implements Translations$meta$en {
 	@override String get account => '계정';
 	@override String get password => '비밀번호';
 	@override String get decryptPassword => '복호화 비밀번호';
+	@override String get overwriteOutboundDns => 'DNS: 덮어쓰기[${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => '필수';
 	@override String get type => '유형';
 	@override String get path => '경로';
@@ -1299,6 +1300,7 @@ extension on TranslationsKo {
 			'meta.account' => '계정',
 			'meta.password' => '비밀번호',
 			'meta.decryptPassword' => '복호화 비밀번호',
+			'meta.overwriteOutboundDns' => 'DNS: 덮어쓰기[${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => '필수',
 			'meta.type' => '유형',
 			'meta.path' => '경로',
@@ -1465,9 +1467,9 @@ extension on TranslationsKo {
 			'isp.bind' => '[${_root.meta.isp}]에 바인딩 ',
 			'isp.unbind' => ({required Object p}) => '바인딩 해제 [${p}]',
 			'isp.faq' => ({required Object p}) => '자주 묻는 질문 [${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			'isp.follow' => ({required Object p}) => '팔로우 [${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}]가 유효하지 않거나 만료되었습니다',
 			'permission.camera' => '카메라',

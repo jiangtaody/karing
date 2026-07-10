@@ -670,6 +670,7 @@ class _Translations$meta$th implements Translations$meta$en {
 	@override String get account => 'บัญชี';
 	@override String get password => 'รหัสผ่าน';
 	@override String get decryptPassword => 'รหัสผ่านถอดรหัส';
+	@override String get overwriteOutboundDns => 'DNS: เขียนทับ [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'จำเป็น';
 	@override String get type => 'ประเภท';
 	@override String get path => 'เส้นทาง';
@@ -1299,6 +1300,7 @@ extension on TranslationsTh {
 			'meta.account' => 'บัญชี',
 			'meta.password' => 'รหัสผ่าน',
 			'meta.decryptPassword' => 'รหัสผ่านถอดรหัส',
+			'meta.overwriteOutboundDns' => 'DNS: เขียนทับ [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'จำเป็น',
 			'meta.type' => 'ประเภท',
 			'meta.path' => 'เส้นทาง',
@@ -1465,9 +1467,9 @@ extension on TranslationsTh {
 			'isp.bind' => 'ผูกไว้กับ [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'ยกเลิกการผูก[${p}]',
 			'isp.faq' => ({required Object p}) => 'คำถามที่พบบ่อย[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'ติดตาม[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] ไม่ถูกต้องหรือหมดอายุ',
 			'permission.camera' => 'กล้อง',

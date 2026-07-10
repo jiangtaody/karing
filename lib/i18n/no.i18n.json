@@ -389,6 +389,7 @@
         "account": "Konto",
         "password": "Passord",
         "decryptPassword": "Dekryptering passord",
+        "overwriteOutboundDns": "DNS: Overstyr [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Påkrevd",
         "type": "Type",
         "path": "Bane",

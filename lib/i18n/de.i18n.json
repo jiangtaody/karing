@@ -389,6 +389,7 @@
         "account": "Konto",
         "password": "Passwort",
         "decryptPassword": "Entschlüsselungspasswort",
+        "overwriteOutboundDns": "DNS: Überschreiben [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Erforderlich",
         "type": "Typ",
         "path": "Pfad",

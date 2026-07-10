@@ -389,6 +389,7 @@
         "account": "Hesap",
         "password": "Şifre",
         "decryptPassword": "Şifre Çözme Şifresi",
+        "overwriteOutboundDns": "DNS: Geçersiz kıl [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Gerekli",
         "type": "Tür",
         "path": "Yol",

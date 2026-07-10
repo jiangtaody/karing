@@ -389,6 +389,7 @@
         "account": "Conta",
         "password": "Palavra-passe",
         "decryptPassword": "Palavra-passe de descriptografia",
+        "overwriteOutboundDns": "DNS: Sobrescrever [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Obrigatório",
         "type": "Tipo",
         "path": "Caminho",

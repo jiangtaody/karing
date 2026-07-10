@@ -389,6 +389,7 @@
         "account": "खाता",
         "password": "पासवर्ड",
         "decryptPassword": "डिक्रोरप्ट पासवर्ड",
+        "overwriteOutboundDns": "DNS: ओवरराइड करें [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "आवश्यक",
         "type": "प्रकार",
         "path": "पथ",

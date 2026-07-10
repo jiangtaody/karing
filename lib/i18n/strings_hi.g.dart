@@ -670,6 +670,7 @@ class _Translations$meta$hi implements Translations$meta$en {
 	@override String get account => 'खाता';
 	@override String get password => 'पासवर्ड';
 	@override String get decryptPassword => 'डिक्रोरप्ट पासवर्ड';
+	@override String get overwriteOutboundDns => 'DNS: ओवरराइड करें [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'आवश्यक';
 	@override String get type => 'प्रकार';
 	@override String get path => 'पथ';
@@ -1299,6 +1300,7 @@ extension on TranslationsHi {
 			'meta.account' => 'खाता',
 			'meta.password' => 'पासवर्ड',
 			'meta.decryptPassword' => 'डिक्रोरप्ट पासवर्ड',
+			'meta.overwriteOutboundDns' => 'DNS: ओवरराइड करें [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'आवश्यक',
 			'meta.type' => 'प्रकार',
 			'meta.path' => 'पथ',
@@ -1465,9 +1467,9 @@ extension on TranslationsHi {
 			'isp.bind' => '[${_root.meta.isp}] से बांधें ',
 			'isp.unbind' => ({required Object p}) => 'अनबाइंड करें[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'फॉलो करें[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] अमान्य या समाप्त हो गया',
 			'permission.camera' => 'कैमरा',

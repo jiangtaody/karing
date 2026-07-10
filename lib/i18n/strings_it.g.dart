@@ -670,6 +670,7 @@ class _Translations$meta$it implements Translations$meta$en {
 	@override String get account => 'Account';
 	@override String get password => 'Password';
 	@override String get decryptPassword => 'Password di decrittazione';
+	@override String get overwriteOutboundDns => 'DNS: Sovrascrivi [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Richiesto';
 	@override String get type => 'Tipo';
 	@override String get path => 'Percorso';
@@ -1299,6 +1300,7 @@ extension on TranslationsIt {
 			'meta.account' => 'Account',
 			'meta.password' => 'Password',
 			'meta.decryptPassword' => 'Password di decrittazione',
+			'meta.overwriteOutboundDns' => 'DNS: Sovrascrivi [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Richiesto',
 			'meta.type' => 'Tipo',
 			'meta.path' => 'Percorso',
@@ -1465,9 +1467,9 @@ extension on TranslationsIt {
 			'isp.bind' => 'Associa A [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Disassocia[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'Segui[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Non valido o scaduto',
 			'permission.camera' => 'Fotocamera',

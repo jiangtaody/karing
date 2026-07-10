@@ -389,6 +389,7 @@
         "account": "اکاؤنٹ",
         "password": "پاس ورڈ",
         "decryptPassword": "ڈی کرپٹ پاس ورڈ",
+        "overwriteOutboundDns": "DNS: اووررائڈ کریں [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "ضروری",
         "type": "قسم",
         "path": "راستہ",

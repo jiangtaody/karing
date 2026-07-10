@@ -670,6 +670,7 @@ class _Translations$meta$fa implements Translations$meta$en {
 	@override String get account => 'نام‌کاربری';
 	@override String get password => 'رمز‌عبور';
 	@override String get decryptPassword => 'دکريپت رمز‌عبور';
+	@override String get overwriteOutboundDns => 'DNS: بازنویسی [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'الزامی';
 	@override String get type => 'نوع';
 	@override String get path => 'مسیر';
@@ -1299,6 +1300,7 @@ extension on TranslationsFa {
 			'meta.account' => 'نام‌کاربری',
 			'meta.password' => 'رمز‌عبور',
 			'meta.decryptPassword' => 'دکريپت رمز‌عبور',
+			'meta.overwriteOutboundDns' => 'DNS: بازنویسی [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'الزامی',
 			'meta.type' => 'نوع',
 			'meta.path' => 'مسیر',
@@ -1465,9 +1467,9 @@ extension on TranslationsFa {
 			'isp.bind' => 'اتصال به [${_root.meta.isp}]',
 			'isp.unbind' => ({required Object p}) => 'لغو پیوند[${p}]',
 			'isp.faq' => ({required Object p}) => 'سوالات متداول[${p}]',
-			'isp.customerService' => ({required Object p}) => 'خدمات مشتری[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'خدمات مشتری[${p}]',
 			'isp.follow' => ({required Object p}) => 'دنبال کردن[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}]نامعتبر یا منقضی شده است',
 			'permission.camera' => 'دوربین',

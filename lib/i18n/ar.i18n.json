@@ -389,6 +389,7 @@
         "account": "حساب",
         "password": "كلمة المرور",
         "decryptPassword": "فك تشفير كلمة المرور",
+        "overwriteOutboundDns": "DNS: استبدال [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "مطلوب",
         "type": "يكتب",
         "path": "طريق",

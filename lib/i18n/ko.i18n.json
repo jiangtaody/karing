@@ -389,6 +389,7 @@
         "account": "계정",
         "password": "비밀번호",
         "decryptPassword": "복호화 비밀번호",
+        "overwriteOutboundDns": "DNS: 덮어쓰기[@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "필수",
         "type": "유형",
         "path": "경로",

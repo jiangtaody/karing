@@ -670,6 +670,7 @@ class _Translations$meta$id implements Translations$meta$en {
 	@override String get account => 'Akun';
 	@override String get password => 'Kata sandi';
 	@override String get decryptPassword => 'Kata sandi dekripsi';
+	@override String get overwriteOutboundDns => 'DNS: Timpa [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Wajib';
 	@override String get type => 'Tipe';
 	@override String get path => 'Jalur';
@@ -1299,6 +1300,7 @@ extension on TranslationsId {
 			'meta.account' => 'Akun',
 			'meta.password' => 'Kata sandi',
 			'meta.decryptPassword' => 'Kata sandi dekripsi',
+			'meta.overwriteOutboundDns' => 'DNS: Timpa [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Wajib',
 			'meta.type' => 'Tipe',
 			'meta.path' => 'Jalur',
@@ -1465,9 +1467,9 @@ extension on TranslationsId {
 			'isp.bind' => 'Ikat ke [${_root.meta.isp}]',
 			'isp.unbind' => ({required Object p}) => 'Lepaskan ikatan [${p}]',
 			'isp.faq' => ({required Object p}) => 'Pertanyaan umum [${p}]',
-			'isp.customerService' => ({required Object p}) => 'Layanan pelanggan [${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Layanan pelanggan [${p}]',
 			'isp.follow' => ({required Object p}) => 'Ikuti [${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] tidak valid atau telah kedaluwarsa',
 			'permission.camera' => 'Kamera',

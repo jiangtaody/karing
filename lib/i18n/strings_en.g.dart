@@ -1424,6 +1424,9 @@ class Translations$meta$en {
 	/// en: 'Decrypt Password'
 	String get decryptPassword => 'Decrypt Password';
 
+	/// en: 'DNS: Override [Proxy Server]'
+	String get overwriteOutboundDns => 'DNS: Override [${_root.SettingsScreen.dnsTypeOutbound}]';
+
 	/// en: 'Required'
 	String get required => 'Required';
 
@@ -2438,6 +2441,7 @@ extension on Translations {
 			'meta.account' => 'Account',
 			'meta.password' => 'Password',
 			'meta.decryptPassword' => 'Decrypt Password',
+			'meta.overwriteOutboundDns' => 'DNS: Override [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Required',
 			'meta.type' => 'Type',
 			'meta.path' => 'Path',
@@ -2604,9 +2608,9 @@ extension on Translations {
 			'isp.bind' => 'Bind To [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Unbind[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'Follow[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] Invalid or expired',
 			'permission.camera' => 'Camera',

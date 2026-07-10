@@ -670,6 +670,7 @@ class _Translations$meta$ur implements Translations$meta$en {
 	@override String get account => 'اکاؤنٹ';
 	@override String get password => 'پاس ورڈ';
 	@override String get decryptPassword => 'ڈی کرپٹ پاس ورڈ';
+	@override String get overwriteOutboundDns => 'DNS: اووررائڈ کریں [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'ضروری';
 	@override String get type => 'قسم';
 	@override String get path => 'راستہ';
@@ -1299,6 +1300,7 @@ extension on TranslationsUr {
 			'meta.account' => 'اکاؤنٹ',
 			'meta.password' => 'پاس ورڈ',
 			'meta.decryptPassword' => 'ڈی کرپٹ پاس ورڈ',
+			'meta.overwriteOutboundDns' => 'DNS: اووررائڈ کریں [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'ضروری',
 			'meta.type' => 'قسم',
 			'meta.path' => 'راستہ',
@@ -1465,9 +1467,9 @@ extension on TranslationsUr {
 			'isp.bind' => '[${_root.meta.isp}] سے منسلک کریں ',
 			'isp.unbind' => ({required Object p}) => 'علیحدہ کریں[${p}]',
 			'isp.faq' => ({required Object p}) => 'FAQ[${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram[${p}]',
 			'isp.follow' => ({required Object p}) => 'فالو کریں[${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] غلط یا ختم ہو گیا',
 			'permission.camera' => 'کیمرہ',

@@ -389,6 +389,7 @@
         "account": "نام‌کاربری",
         "password": "رمز‌عبور",
         "decryptPassword": "دکريپت رمز‌عبور",
+        "overwriteOutboundDns": "DNS: بازنویسی [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "الزامی",
         "type": "نوع",
         "path": "مسیر",

@@ -670,6 +670,7 @@ class _Translations$meta$vi implements Translations$meta$en {
 	@override String get account => 'Tài khoản';
 	@override String get password => 'Mật khẩu';
 	@override String get decryptPassword => 'Mật khẩu giải mã';
+	@override String get overwriteOutboundDns => 'DNS: Ghi đè [${_root.SettingsScreen.dnsTypeOutbound}]';
 	@override String get required => 'Bắt buộc';
 	@override String get type => 'Loại';
 	@override String get path => 'Đường dẫn';
@@ -1299,6 +1300,7 @@ extension on TranslationsVi {
 			'meta.account' => 'Tài khoản',
 			'meta.password' => 'Mật khẩu',
 			'meta.decryptPassword' => 'Mật khẩu giải mã',
+			'meta.overwriteOutboundDns' => 'DNS: Ghi đè [${_root.SettingsScreen.dnsTypeOutbound}]',
 			'meta.required' => 'Bắt buộc',
 			'meta.type' => 'Loại',
 			'meta.path' => 'Đường dẫn',
@@ -1465,9 +1467,9 @@ extension on TranslationsVi {
 			'isp.bind' => 'Liên kết với [${_root.meta.isp}] ',
 			'isp.unbind' => ({required Object p}) => 'Hủy liên kết [${p}]',
 			'isp.faq' => ({required Object p}) => 'Câu hỏi thường gặp [${p}]',
-			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			_ => null,
 		} ?? switch (path) {
+			'isp.customerService' => ({required Object p}) => 'Telegram [${p}]',
 			'isp.follow' => ({required Object p}) => 'Theo dõi [${p}]',
 			'isp.invalidOrExpired' => '[${_root.meta.isp}] không hợp lệ hoặc hết hạn',
 			'permission.camera' => 'Máy ảnh',

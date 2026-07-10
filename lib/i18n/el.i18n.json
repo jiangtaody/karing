@@ -389,6 +389,7 @@
         "account": "Λογαριασμός",
         "password": "Κωδικός πρόσβασης",
         "decryptPassword": "Κωδικός Αποκρυπτογράφησης",
+        "overwriteOutboundDns": "DNS: Επικάλυψη [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Απαιτείται",
         "type": "Τύπος",
         "path": "Διαδρομή",

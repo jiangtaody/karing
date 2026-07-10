@@ -389,6 +389,7 @@
         "account": "Konto",
         "password": "Adgangskode",
         "decryptPassword": "Dekryptering adgangskode",
+        "overwriteOutboundDns": "DNS: Tilsidesæt [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Påkrævet",
         "type": "Type",
         "path": "Sti",

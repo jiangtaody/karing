@@ -389,6 +389,7 @@
         "account": "Konto",
         "password": "Lösenord",
         "decryptPassword": "Dekrypterringslösenord",
+        "overwriteOutboundDns": "DNS: Åsidosätt [@:{SettingsScreen.dnsTypeOutbound}]",
         "required": "Krävs",
         "type": "Typ",
         "path": "Sökväg",
